@@ -11,10 +11,17 @@ public class Riddle {
     private static Coin[] coins;
 
     public static void main(String[] args) {
-        int capacity = 1000;
+        int capacity = 100;
         initCoins(capacity);
         checkCoins(capacity);
         printCoins(capacity);
+        printFlipCounts(capacity);
+    }
+
+    private static void printFlipCounts(int capacity) {
+        for (int i = 0; i < capacity; i++) {
+            System.out.println((i+1) + ": " + coins[i].getFlipCount());
+        }
     }
 
     private static void printCoins(int capacity) {
