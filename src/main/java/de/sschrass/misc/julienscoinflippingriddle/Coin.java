@@ -1,5 +1,6 @@
 package de.sschrass.misc.julienscoinflippingriddle;
 
+@SuppressWarnings("unused")
 public class Coin {
     private CoinState coinState;
     private int flipCount = 0;

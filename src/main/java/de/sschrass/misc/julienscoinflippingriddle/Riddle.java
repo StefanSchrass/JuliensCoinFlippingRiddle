@@ -16,6 +16,15 @@ public class Riddle {
         checkCoins(capacity);
         printCoins(capacity);
         printFlipCounts(capacity);
+        printEvenFlipCounts(capacity);
+    }
+
+    private static void printEvenFlipCounts(int capacity) {
+        for (int i = 0; i < capacity; i++) {
+            if (coins[i].getFlipCount() % 2 == 0) {
+                System.out.println((i+1));
+            }
+        }
     }
 
     private static void printFlipCounts(int capacity) {
